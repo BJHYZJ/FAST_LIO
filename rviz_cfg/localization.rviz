@@ -454,8 +454,6 @@ Visualization Manager:
           Value: true
         map:
           Value: true
-        robot_foot_init:
-          Value: true
       Marker Alpha: 1
       Marker Scale: 1
       Name: TF
@@ -470,8 +468,6 @@ Visualization Manager:
             body:
               body_foot:
                 {}
-            robot_foot_init:
-              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
