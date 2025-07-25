@@ -2,12 +2,14 @@
 <!-- Launch file for Livox AVIA LiDAR -->
 
 	<arg name="rviz" default="true" />
-	<arg name="use_sim_time" value="true"/>
+	<!-- 这样设置是没有用的，得放在param里面才能起作用 -->
+	<arg name="use_sim_time" value="true"/> 
 	<arg name="map" default="$(find fast_lio)/PCD/scans.pcd" />
 
 	<!-- fast_lio -->
 	<rosparam command="load" file="$(find fast_lio)/config/mid360.yaml" />
-
+	
+	<param name="use_sim_time" value="$(arg use_sim_time)"/>
 	<param name="feature_extract_enable" type="bool" value="0"/>
 	<param name="point_filter_num" type="int" value="3"/>
 	<param name="max_iteration" type="int" value="3" />
